@@ -1,0 +1,22 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb-base",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "prettier"
+    ],
+    "rules": {
+        "no-console": ["error", { "allow": ["log"] }],
+        "comma-dangle": ["error", "never"],
+        "no-restricted-syntax": ["error", "never"]
+    }
+}

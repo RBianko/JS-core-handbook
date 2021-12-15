@@ -1,0 +1,29 @@
+{
+  "name": "jazz-team-practice",
+  "version": "1.0.0",
+  "description": "HTML CSS (figma template) practicing at JazzTeam",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "npx eslint .",
+    "eslintfix": "npx eslint --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roman-bianko/JazzTeam-practice-stage"
+  },
+  "author": "roman-bianko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roman-bianko/JazzTeam-practice-stage/issues"
+  },
+  "homepage": "https://github.com/roman-bianko/JazzTeam-practice-stage#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "2.4.1"
+  }
+}
