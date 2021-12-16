@@ -51,7 +51,7 @@ const generateContent = (version) => {
             const example = document.createElement('img')
             example.setAttribute('class', 'item__img')
             example.setAttribute('alt', 'example feature')
-            example.setAttribute('src', `./img/${feature.src[i]}.png`)
+            example.setAttribute('src', `./img/${version.title}/${feature.src[i]}.png`)
             imageWrapper.append(example)
 
             wrapper.append(description)
