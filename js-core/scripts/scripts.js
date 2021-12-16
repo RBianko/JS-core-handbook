@@ -5,16 +5,16 @@ const featuresRequest = async () => {
     return response
 }
 
-const versionEcmaScript = await featuresRequest()
+const versionsEcmaScript = await featuresRequest()
 const headerMenu = document.querySelector('.header__menu')
 const main = document.querySelector('.main-content')
 
-const generateMenu = (versionEcmaScript, classNameUl, block) => {
+const generateMenu = (versionsEcmaScript, classNameUl, block) => {
 
     const ul = document.createElement('ul')
     ul.setAttribute('class', classNameUl)
 
-    versionEcmaScript.forEach(version => {
+    versionsEcmaScript.forEach(version => {
         const li = document.createElement('li')
         li.setAttribute('class', 'feature__link')
         const a = document.createElement('a')
@@ -28,7 +28,7 @@ const generateMenu = (versionEcmaScript, classNameUl, block) => {
     block.append(ul)
 }
 
-generateMenu(versionEcmaScript, 'menu__links', headerMenu)
+generateMenu(versionsEcmaScript, 'menu__links', headerMenu)
 
 const generateContent = (version) => {
 
@@ -63,9 +63,9 @@ const generateContent = (version) => {
 
 }
 
-const generateSubMenu = (versionEcmaScript) => {
+const generateSubMenu = (versionsEcmaScript) => {
 
-    versionEcmaScript.forEach(version => {
+    versionsEcmaScript.forEach(version => {
         const wrapper = document.createElement('div')
         wrapper.setAttribute('class', 'feature-list')
         wrapper.setAttribute('id', version.href)
@@ -81,6 +81,4 @@ const generateSubMenu = (versionEcmaScript) => {
 
 }
 
-generateSubMenu(versionEcmaScript)
-
-
+generateSubMenu(versionsEcmaScript)
